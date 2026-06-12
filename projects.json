@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": "web",
+      "tabId": "tab-web",
+      "i18nTitle": "srv_web_title",
+      "i18nDesc": "srv_web_desc",
+      "emptyIcon": "🌐",
+      "tools": ["React.js", "Node.js", "PHP", "Tailwind"],
+      "projects": [
+        {
+          "id": 1,
+          "title": "DataVis Dashboard",
+          "description": "A modern, dark-themed data visualization dashboard using advanced chart libraries and a fully responsive grid system.",
+          "thumbnail": "assets/project1.png",
+          "tags": ["React", "D3.js", "Tailwind"],
+          "liveUrl": "",
+          "githubUrl": ""
+        },
+        {
+          "id": 2,
+          "title": "E-Commerce Platform",
+          "description": "A full-stack e-commerce solution with dynamic inventory management, real-time updates, and an intuitive user interface.",
+          "thumbnail": "assets/Project2.png",
+          "tags": ["JavaScript", "ReactJS", "MongoDB"],
+          "liveUrl": "",
+          "githubUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "tabId": "tab-mobile",
+      "i18nTitle": "srv_mob_title",
+      "i18nDesc": "srv_mob_desc",
+      "emptyIcon": "📱",
+      "tools": ["Flutter", "React Native", "Java", "Kotlin"],
+      "projects": []
+    },
+    {
+      "id": "ui",
+      "tabId": "tab-ui",
+      "i18nTitle": "srv_ui_title",
+      "i18nDesc": "srv_ui_desc",
+      "emptyIcon": "🎨",
+      "tools": ["Figma", "Adobe XD", "Prototyping"],
+      "projects": []
+    },
+    {
+      "id": "video",
+      "tabId": "tab-video",
+      "i18nTitle": "srv_vid_title",
+      "i18nDesc": "srv_vid_desc",
+      "emptyIcon": "🎬",
+      "tools": ["Premiere Pro", "After Effects", "DaVinci Resolve"],
+      "projects": []
+    }
+  ]
+}
