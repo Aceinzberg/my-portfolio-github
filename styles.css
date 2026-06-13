@@ -1166,6 +1166,57 @@ footer {
 
 /* Responsive Media Query */
 @media (max-width: 900px) {
+    /* Responsive Navigation */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    .menu-toggle .bar {
+        height: 3px;
+        width: 100%;
+        background-color: var(--text-main);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.toggle-active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.toggle-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.toggle-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(22, 22, 20, 0.95);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+        border-bottom: 1px solid var(--card-border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out;
+    }
+
+    .nav-links.nav-active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    /* Existing responsive fixes */
     .about-grid, 
     .project-item, 
     .project-item.reverse, 
@@ -1182,5 +1233,11 @@ footer {
     .modal-content, 
     .folder-contents {
         padding: 30px;
+    }
+}
+
+@media (min-width: 901px) {
+    .menu-toggle {
+        display: none;
     }
 }

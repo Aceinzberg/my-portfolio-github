@@ -21,6 +21,26 @@ links.forEach(link => {
     });
 });
 
+// Mobile Menu Logic
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navLinksContainer = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-item');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('nav-active');
+        mobileMenuBtn.classList.toggle('toggle-active');
+    });
+
+    // Close menu when clicking a link
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinksContainer.classList.remove('nav-active');
+            mobileMenuBtn.classList.remove('toggle-active');
+        });
+    });
+}
+
 // GSAP Animations Registration
 gsap.registerPlugin(ScrollTrigger);
 
